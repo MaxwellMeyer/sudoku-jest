@@ -1,3 +1,4 @@
-export default function Sudoku() {
-  
+export default function Sudoku(column,row) {
+  this.column = column;
+  this.row = row;
 }
