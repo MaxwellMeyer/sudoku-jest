@@ -4,9 +4,13 @@ export default function Sudoku(column,row) {
 }
 
 Sudoku.prototype.checkInteger = function() {
-  // const input = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  // for (i = 0; i <= array.length; i ++)
-  //   if (!(array[i]).includes(input[i])) {
-  //     return NaN;
-  //   }
+  let arrColumn = this.column;
+  let arrRow = this.row;
+  const input = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const notANumber = [...arrColumn,...arrRow];
+  for (let i = 0; i < notANumber.length; i++) {
+    if (!notANumber.includes(input[i])) {
+      return "one number is outside 1-9";
+    }
+  }
 }
