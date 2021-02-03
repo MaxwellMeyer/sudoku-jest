@@ -14,3 +14,7 @@ Sudoku.prototype.checkInteger = function() {
     }
   }
 }
+
+Sudoku.prototype.checkDuplicate = function() {
+  
+}
